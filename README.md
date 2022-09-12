@@ -1,5 +1,5 @@
 # ActorHello-wp
-The ActorHello theme fit for Wordpress
+The ActorHello theme fit for Wordpress using PHP
 
 My original inspiration for this template came a few years ago.  
 I was a new grad from drama school and I was trying to establish an online presence.  
