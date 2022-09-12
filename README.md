@@ -8,4 +8,5 @@ So I surveyed my teachers and peers, asking them what they thought an actor's we
   
 There's space for a gallery, reel, as well as contact info and a link to a resume.  
   
-The guy in these pictures is [Aaron Stewart]([url](https://www.purchase.edu/live/profiles/3874-aaron-stewart))
+The guy in these pictures is Aaron Stewart:  
+https://www.purchase.edu/live/profiles/3874-aaron-stewart
