@@ -1,0 +1,420 @@
+:root {
+    --hello-primary: #9a936f;
+    --hello-secondary: #1A242E;
+    --hello-background: white;
+    /*
+        BEST FONT PAIRINGS: (H, B, L)
+        1 - (Quicksand, Noto_Sans_JP, Cormorant_Garamond [Bold])
+        2 - (Poiret_One, Roboto_Condensed, Limelight)
+
+    */
+    --font-family-header: Poiret_One;
+    --font-family-body: Quicksand;
+    --font-family-logo: Limelight;
+}
+
+@font-face {
+    font-family: Poiret_One;
+    src: url("../assets/fonts/Poiret_One/PoiretOne-Regular.ttf"); 
+}
+
+@font-face {
+    font-family: Quicksand;
+    src: url("../assets/fonts/Quicksand/Quicksand-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: Limelight;
+    src: url("../assets/fonts/Limelight/Limelight-Regular.ttf");
+}
+
+.center {
+    text-align: center;
+}
+
+.co1 {
+    color: var(--hello-primary);
+}
+
+.co2 {
+    color: var(--hello-secondary);
+}
+
+.coB {
+    color: var(--hello-background);
+}
+
+.ffb {
+    font-family: var(--font-family-body);
+}
+
+.ffl {
+    font-family: var(--font-family-logo);
+}
+
+.ffh {
+    font-family: var(--font-family-header);
+}
+
+.about-box {
+    margin: 2rem auto;
+    width: inherit;
+    height: 500px;
+}
+
+.about-box .picnbio {
+    display: flex;
+    margin: auto;
+}
+
+.about-box .picnbio img {
+    border-radius: 500px;
+    width: 50%;
+    height: auto;
+    margin: auto;
+}
+
+.about-box .picnbio h2 {
+    text-align: right;
+    margin: auto auto;
+    padding: 1rem;
+}
+
+.about-box .picnbio .resumebutton {
+    border-radius: 1rem;
+    color: var(--hello-primary);
+    padding: .3rem;
+    font-weight: bold;
+}
+.about-box .picnbio .resumebutton:hover {
+    background-color: var(--hello-secondary);
+    color: white;
+    text-decoration: none;
+}
+
+.borderhover {
+    border-radius: none;
+}
+
+.borderhover:hover {
+    border-radius: 1rem;
+    text-decoration: none;
+    transition: ease-in .15s;
+    -webkit-transition: ease-in .15s;
+    -moz-transition: ease-in .15s;
+    -o-transition: ease-in .15s;
+}
+
+.contact-box {
+    margin: auto;
+    width: inherit;
+    text-align: center;
+}
+
+.contact-box h1 {
+    margin: 2rem 0 .5rem 0;
+    text-decoration: underline;
+}
+
+.contact-box div {
+    margin: 1rem 0;
+}
+
+.content {
+    padding: 16px;
+}
+
+
+.e404 {
+    margin: 5em 0 0 0;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+
+.gallery a {
+    margin: 0;
+}
+
+.gallery div{
+    overflow: hidden;
+    width: 12rem;
+    height: 8rem;
+    background-color: var(--hello-secondary);
+    border-radius: .25rem;
+    margin: 0 0 1rem 0;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.gallery img:hover {
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -o-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+/* vvv Nav bar code vvv */
+
+.logotxt {
+    font-family: var(--font-family-logo);
+}
+.logotxt:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+nav {
+    background-color: var(--hello-background);
+    display: flex;
+    margin: auto;
+    font-size: 2rem;
+    z-index: 1;
+    /*border-bottom: 1px solid var(--hello-secondary);*/
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+a.navlink{
+    color: var(--hello-secondary);
+    margin: auto .5rem;
+    padding: .5rem;
+    text-decoration: none;
+}
+
+a.navlink:hover {
+    color: var(--hello-primary);
+    text-decoration: none;
+}
+
+.navlink.clicked {
+    color: var(--hello-background);
+    background-color: var(--hello-primary);
+    border-radius: 2rem;
+    text-decoration: none;
+}
+
+.navlink.clicked:hover {
+    color: var(--hello-background);
+    text-decoration: none;
+}
+
+/* ^^^ Navbar code ^^^ */
+
+/* vvv Large picture classes vvv */
+
+.parallax {
+    background: url('../assets/images/HEADSHOT2.jpg');
+}
+
+.parallax-contact {
+    background: url("../assets/images/45808218_367776567099254_2469340946609733632_o.jpg");
+}
+
+.parallax-work {
+    background: url("../assets/images/Blood-Wedding-2.jpg");
+    background-position: bottom;
+}
+
+.parallax, .parallax-contact, .parallax-work {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    color: var(--hello-primary);
+
+    position: relative;
+
+    size: 3em;
+
+    height: 30rem;
+}
+
+/* ^^^ Large Picture Classes ^^^ */
+
+#reel {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: .25rem;
+    padding: 0 0 1rem 0;
+}
+
+.contact-box.socials {
+    display: flex;
+    margin: 1rem auto;
+}
+
+.socials a i {
+    border-radius: 1em;
+    color: var(--hello-secondary);
+    margin: 0 1rem;
+    transform: scale(2);
+    padding: .3rem;
+}
+
+.socials a i:hover {
+    color: var(--hello-background);
+    background-color: var(--hello-secondary);
+}
+
+.sticky {
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+}
+  
+/* .sticky + .content {
+
+    padding-top: 60px;
+
+} */
+
+@media (min-width: 992px) {
+    .gallery {
+        grid-template-rows: repeat(3, auto);
+        grid-template-columns: repeat(4, auto);
+    }
+
+    .gallery div {
+        margin: 1.5em;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .about-box .picnbio {
+        flex-direction: column-reverse;
+        margin-right: auto;
+    }
+    
+    .about-box .picnbio h2 {
+        text-align: center;
+    }
+
+    .about-box .picnbio .resumebutton h2 a {
+        margin-top: 1rem;
+    }
+
+    ul div {
+        margin-right: 1%;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .e404 {
+        margin: 5rem auto;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .e404 {
+        font-size: large;
+    }
+
+    .gallery {
+        margin: 0 auto;
+    }
+
+    .gallery div{
+        overflow: hidden;
+        width: 8.8rem;
+        height: 6rem;
+    }
+
+    .socials {
+        margin: 0 0 .25rem 0;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 682px) {
+    .ffh, .ffl {
+        font-size: 140%;
+    }
+}
+
+@media (max-width: 576px) {
+    ul div {
+        text-align: right;
+    }
+    
+    #titlework {
+        top: 7.5rem;
+    }
+}
+
+@media (max-width:400px) {
+    
+    .ffl, .ffh {
+        font-size: 100%;
+    }
+    
+    ul div {
+        width: 100px;
+    }
+}
+
+@media (max-width: 330px) {
+    .contact-box h1 {
+        font-size: 20pt;
+        font-weight: bolder;
+    }
+    .contact-box h2{
+        font-size: 16pt;
+        font-weight: bold;
+    }
+    .contact-box h3 {
+        font-size: 14pt;
+        font-weight: bold;
+    }
+
+    .gallery div {
+        width: 4.5rem;
+        height: 3rem;
+    }
+
+    #galleryheaderwork {
+        margin-bottom: .25rem;
+    }
+
+    .parallax, .parallax-contact, .parallax-work {
+        height: 15rem;
+    }
+
+    .socials {
+        transform: scale(.7);
+    }
+    .socials a i {
+        margin: 0 .75rem;
+    }
+}
+
+@media (max-width: 250px) {
+    .ffl, .ffh {
+        font-size: 75%;
+    }
+    
+    ul div {
+        width: 75px;
+    }
+}
