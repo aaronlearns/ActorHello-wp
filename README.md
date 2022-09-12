@@ -1,7 +1,7 @@
 # ActorHello-wp
 The ActorHello theme fit for Wordpress
 
-My original inspiration for this template came a few years ago.
+My original inspiration for this template came a few years ago.\n
 I was a new grad from drama school and I was trying to establish an online presence.
 I felt that Wordpress was the best service, but they didn't have a theme for actors!
 So I surveyed my teachers and peers, asking them what they thought an actor's website should have,
